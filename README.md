@@ -1,2 +1,2 @@
-# js-cross-domain
-cross domain demo
+# js-cross-origin
+JS 跨域实验室
