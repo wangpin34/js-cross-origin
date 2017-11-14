@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="application-name" content="snow white">
+<meta name="generator" content="wang pin">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="wang pin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--HTML4 charset def-->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--HTML5 charset def-->
+<meta charset="UTF-8">
+<title>JSONP demo</title>
+</head>
+<body>
+
+
+</body>
+<script type="text/javascript">
+  
+  function jsonp (url) {
+    var script = document.createElement('script');
+    script.src = url;
+    document.body.appendChild(script);
+  }
+
+  var url = 'http://localhost:8000/users?callback=handle';
+
+  function handle (data) {
+    alert(JSON.stringify(data, null, 2));
+  }
+
+  jsonp(url);
+</script>
+</html>

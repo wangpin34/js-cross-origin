@@ -1,0 +1,37 @@
+{
+  "name": "js-cross-domain",
+  "version": "0.0.1",
+  "description": "js cross domain demos",
+  "main": "index.js",
+  "dependencies": {
+    "good": "^7.3.0",
+    "good-console": "^6.4.0",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^16.6.2",
+    "http-server": "^0.10.0",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "node --harmony backend.js",
+    "backend-dev": "nodemon --harmony backend.js",
+    "jsonp-node": "http-server ./jsonp -p 9001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangpin34/js-cross-domain.git"
+  },
+  "keywords": [
+    "js",
+    "cross",
+    "domain",
+    "demos"
+  ],
+  "author": "wangpin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangpin34/js-cross-domain/issues"
+  },
+  "homepage": "https://github.com/wangpin34/js-cross-domain#readme"
+}
